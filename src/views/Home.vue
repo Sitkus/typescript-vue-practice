@@ -11,6 +11,7 @@ import MoneyCounter from '@/components/MoneyCounter.vue';
 
 export default defineComponent({
     name: 'Home',
+
     components: {
         MoneyCounter
     }
