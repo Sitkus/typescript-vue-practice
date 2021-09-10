@@ -1,8 +1,8 @@
 <template>
     <section>
         <h5>Money counter: {{ money }}</h5>
-        <button @click="checkMoneyCount('increment')">+++</button>
-        <button @click="checkMoneyCount('decrement')">---</button>
+        <button data-testid="btn-increment" @click="checkMoneyCount('increment')">+++</button>
+        <button data-testid="btn-decrement" @click="checkMoneyCount('decrement')">---</button>
     </section>
 </template>
 
