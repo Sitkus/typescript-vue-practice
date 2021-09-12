@@ -30,11 +30,21 @@ export default defineComponent({
         },
 
         increment(): void {
+            this.listCreator('hello');
+            this.listCreator(4);
+            this.listCreator(true);
             this.money++;
         },
 
         decrement(): void {
             this.money--;
+        },
+
+        listCreator<T>(item: T): T[] {
+            const list: T[] = [];
+
+            list.push(item);
+            return list;
         }
     }
 });
