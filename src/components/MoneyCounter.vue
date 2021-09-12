@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section class="mb-5">
         <h5>Money counter: {{ money }}</h5>
         <button data-testid="btn-increment" @click="checkMoneyCount('increment')">+++</button>
         <button data-testid="btn-decrement" @click="checkMoneyCount('decrement')">---</button>
@@ -50,4 +50,8 @@ export default defineComponent({
 });
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.mb-5 {
+    margin-bottom: 3rem;
+}
+</style>
